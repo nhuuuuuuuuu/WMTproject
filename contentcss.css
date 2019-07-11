@@ -1,0 +1,16 @@
+div .row {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
